@@ -1,7 +1,9 @@
 import React from "react";
 import "../Header/header.css";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 const Header = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     const headerAdj = () => {
       if (window.innerWidth < 767) {
@@ -86,27 +88,27 @@ const Header = () => {
             </div>
             <div class="nav-wrap">
               <ul class="nav-list">
-                <li class="active">
+                {/* <li class="active">
                   <a href="#">About-us</a>
                 </li>
                 <li>
                   <a href="#">Contact-us</a>
-                </li>
+                </li> */}
                 <li class="with-submenu">
-                  {/* <a href="#">Blog</a>
+                  <a href="#">Items</a>
                   <div class="submenu">
                     <ul class="submenu-inner">
                       <li>
-                        <a href="#">Link1</a>
+                        <a onClick={() => navigate("/favorites")}>Favorite</a>
                       </li>
                       <li>
-                        <a href="#">Link2</a>
+                        <a onClick={() => navigate("/")}>Beers</a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a href="#">Link3</a>
-                      </li>
+                      </li> */}
                     </ul>
-                  </div> */}
+                  </div>
                 </li>
               </ul>
             </div>
