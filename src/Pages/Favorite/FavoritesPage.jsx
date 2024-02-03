@@ -44,13 +44,19 @@ const FavoritesPage = () => {
             {favorites.map((beer) => (
               <Grid item key={beer.id} xs={12} sm={6} md={4} lg={3}>
                 <div className="card">
-                  <Card>
+                  <Card style={{ height: "400px", marginRight: "35px" }}>
                     <CardMedia
                       component="img"
                       alt={beer.name}
                       height="140"
                       image={beer.image_url}
                       className="media"
+                      style={{
+                        objectFit: "cover",
+                        width: "50px",
+                        height: "50%",
+                        margin: "20px auto",
+                      }}
                     />
                     <CardContent>
                       <Typography variant="h6" gutterBottom className="name">
