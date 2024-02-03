@@ -1,5 +1,14 @@
 import React from "react";
 import "../Footer/footer.css";
+import logo from "../../assets/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitter,
+  faLinkedin,
+  faGooglePlus,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -7,29 +16,32 @@ const Footer = () => {
       <footer class="footer">
         <div class="footer-left col-md-4 col-sm-6">
           <p class="about">
-            <span> About the company</span> Ut congue augue non tellus bibendum,
-            in varius tellus condimentum. In scelerisque nibh tortor, sed
-            rhoncus odio condimentum in. Sed sed est ut sapien ultrices
-            eleifend. Integer tellus est, vehicula eu lectus tincidunt,
-            ultricies feugiat leo. Suspendisse tellus elit, pharetra in
-            hendrerit ut, aliquam quis augue. Nam ut nibh mollis, tristique ante
-            sed, viverra massa.
+            <span> About the company</span> Inclusive Fintech 50 (IF50) is a
+            global innovation competition that aims to identify and elevate
+            cutting-edge emerging inclusive fintechs that have the potential to
+            drive financial inclusion. IF50 uncovers high-potential start-up
+            fintechs addressing limitations in financial services delivery for
+            unserved or underserved customers. Over the last three competitions,
+            IF50 has attracted over 1,000 eligible applicants. Past winners have
+            collectively increased their funding by $620 million in the year
+            following their win. Winners benefit from access to zero-cost tools
+            such as Visa’s Practical Business Skills and Practical Money Skills.
           </p>
-          <div class="icons">
+          <div className="icons">
             <a href="#">
-              <i class="fa fa-facebook"></i>
+              <FontAwesomeIcon icon={faFacebook} />
             </a>
             <a href="#">
-              <i class="fa fa-twitter"></i>
+              <FontAwesomeIcon icon={faTwitter} />
             </a>
             <a href="#">
-              <i class="fa fa-linkedin"></i>
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a href="#">
-              <i class="fa fa-google-plus"></i>
+              <FontAwesomeIcon icon={faGooglePlus} />
             </a>
             <a href="#">
-              <i class="fa fa-instagram"></i>
+              <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>
         </div>
@@ -42,26 +54,26 @@ const Footer = () => {
           </div>
           <div>
             <i class="fa fa-phone"></i>
-            <p> (+00) 0000 000 000</p>
+            <p> (+91) 0000 000 000</p>
           </div>
           <div>
             <i class="fa fa-envelope"></i>
             <p>
-              <a href="#"> office@company.com</a>
+              <a href="#"> https://www.inclusivefintech50.com</a>
             </p>
           </div>
         </div>
         <div class="footer-right col-md-4 col-sm-6">
           <h2>
             {" "}
-            Company<span> logo</span>
+            <img src={logo} alt="Company Logo" height="115px" />
           </h2>
           <p class="menu">
             <a href="#"> Home</a> |<a href="#"> About</a> |
             <a href="#"> Services</a> |<a href="#"> Portfolio</a> |
             <a href="#"> News</a> |<a href="#"> Contact</a>
           </p>
-          <p class="name"> Company Name &copy; 2016</p>
+          <p class="name"> Inclusive Fintech 50&copy; 2024 Made By the OWL</p>
         </div>
       </footer>
     </div>

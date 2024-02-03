@@ -2,6 +2,7 @@ import React from "react";
 import "../Header/header.css";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from '../../assets/logo.png'
 const Header = () => {
   const navigate = useNavigate();
   useEffect(() => {
@@ -84,7 +85,9 @@ const Header = () => {
         <div class="container">
           <div class="row-wrap">
             <div class="logo-wrap">
-              <span class="logo">LOGO</span>
+              <span class="logo">
+                <img src={logo} alt="logo" height="50px" style={{marginTop:"8px"}}></img>
+              </span>
             </div>
             <div class="nav-wrap">
               <ul class="nav-list">

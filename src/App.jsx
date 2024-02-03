@@ -15,7 +15,7 @@ function App() {
     <Router>
       <div className="page-container">
         <Header />
-        <Container>
+        <Container className="inside-container">
           <Routes>
             <Route path="/" element={<Search />} />
             <Route

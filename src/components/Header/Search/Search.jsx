@@ -81,6 +81,7 @@ const Search = () => {
         dataLength={beers.length}
         next={fetchBeers}
         hasMore={true}
+         className="infinite-scroll"
         loader={<Loader />}
       >
         <Grid container spacing={1}>

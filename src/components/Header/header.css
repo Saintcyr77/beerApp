@@ -8,7 +8,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color:#414141;
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s;
@@ -20,7 +20,7 @@
 }
 
 .header {
-  background-color: black;
+  background-color: #414141;
   box-shadow: 3px 3px 3px #ccc;
   z-index: 99;
   position: fixed;
@@ -44,7 +44,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0 5%;
+  padding: 0 60px;
 }
 
 .nav-list {
@@ -244,7 +244,10 @@
     transition-property: all;
     padding: 10px;
   }
-
+.row-wrap{
+  padding: 10px;
+  width: 80%;
+}
   .nav-wrap.is-open .nav-list {
     opacity: 1;
     visibility: visible;
@@ -314,4 +317,12 @@
   .nav-list li.with-submenu .submenu li a::after {
     display: block;
   }
+}
+@media (max-width: 400px) {
+
+  .row-wrap{
+    padding: 10px;
+    width: 80%;
+  }
+  
 }
